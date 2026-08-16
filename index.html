@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Terra Nusantara Group | Heavy Equipment Rental</title>
+<meta name="description" content="Terra Nusantara Group — rental alat berat untuk konstruksi, pertambangan, infrastruktur dan industri.">
+<style>
+:root{--bg:#080909;--card:#111313;--line:#292b2b;--gold:#d7a23b;--gold2:#f0c66a;--white:#f4f0e7;--muted:#a7a7a2}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--white);font-family:Inter,Arial,sans-serif}a{text-decoration:none;color:inherit}
+.wrap{width:min(1180px,calc(100% - 36px));margin:auto}.top{background:#050606;border-bottom:1px solid var(--line);font-size:12px;color:#aaa;padding:9px 0}.top .wrap{display:flex;justify-content:space-between}
+header{position:sticky;top:0;z-index:50;background:rgba(8,9,9,.91);backdrop-filter:blur(16px);border-bottom:1px solid #222}.nav{height:78px;display:flex;align-items:center;justify-content:space-between}.logo{display:flex;align-items:center;gap:11px}.monogram{font-family:Georgia,serif;font-weight:900;font-size:34px;color:var(--gold);line-height:1}.logotxt{font-family:Georgia,serif;font-size:14px;letter-spacing:1.1px;line-height:1.05}.logotxt b{font-size:17px}.logotxt small{color:var(--gold);letter-spacing:3px}
+.links{display:flex;gap:28px;color:#d5d5d2;font-size:13px}.links a:hover{color:var(--gold2)}.navcta{display:flex;gap:10px;align-items:center}.btn{border:1px solid #6e5525;padding:13px 18px;border-radius:5px;font-size:12px;font-weight:800;letter-spacing:.3px;display:inline-flex;align-items:center;gap:8px}.goldbtn{background:var(--gold);border-color:var(--gold);color:#0b0b0b}.ghost{background:transparent}.hamb{display:none;font-size:26px}
+.hero{min-height:650px;position:relative;display:flex;align-items:center;overflow:hidden;background-image:linear-gradient(90deg,#070808 0%,rgba(7,8,8,.92) 35%,rgba(7,8,8,.52) 62%,rgba(7,8,8,.75) 100%),url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=1800&q=85');background-size:cover;background-position:center}
+.hero:after{content:"";position:absolute;inset:auto -10% -75% 35%;height:420px;border:75px solid rgba(215,162,59,.09);border-radius:50%}.hero .wrap{position:relative;z-index:2}
+.eyebrow{color:var(--gold2);font-size:12px;font-weight:800;letter-spacing:2.3px}.hero h1{font:700 clamp(44px,7vw,78px)/.96 Georgia,serif;max-width:760px;margin:18px 0}.hero h1 span{color:var(--gold2)}.hero p{max-width:610px;color:#d0d0cc;font-size:17px;line-height:1.75}.actions{display:flex;gap:12px;margin-top:28px;flex-wrap:wrap}
+.trust{margin-top:-55px;position:relative;z-index:4}.trustbox{display:grid;grid-template-columns:repeat(4,1fr);background:rgba(18,20,20,.96);border:1px solid #383838;border-radius:12px;overflow:hidden;box-shadow:0 18px 50px #0008}.trustitem{text-align:center;padding:25px 16px;border-right:1px solid #333}.trustitem:last-child{border:0}.trustitem strong{display:block;margin:8px 0 5px}.trustitem small{color:#969691;line-height:1.45}.ico{font-size:26px;color:var(--gold)}
+section{padding:92px 0}.head{display:flex;justify-content:space-between;align-items:end;margin-bottom:30px}.head h2{font:700 40px/1.05 Georgia,serif;margin:9px 0}.head p{color:#999;max-width:500px;line-height:1.6}
+.units{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.unit{background:var(--card);border:1px solid #2c2e2e;border-radius:12px;overflow:hidden;transition:.25s}.unit:hover{transform:translateY(-5px);border-color:#725523}.unitimg{height:190px;background-size:cover;background-position:center;position:relative}.tag{position:absolute;left:12px;top:12px;background:#090909dd;color:var(--gold2);padding:7px 9px;border:1px solid #6a5121;border-radius:4px;font-size:10px;font-weight:800}.unitbody{padding:18px}.unitbody h3{font:700 22px Georgia,serif;margin:0 0 6px}.spec{font-size:12px;color:#999;line-height:1.6;min-height:57px}.unitfoot{border-top:1px solid #292b2b;margin-top:13px;padding-top:13px;display:flex;justify-content:space-between;align-items:end}.price{color:var(--gold2);font-weight:800}.price small{display:block;color:#777;font-weight:400}
+.band{background:#121414;border-top:1px solid #292b2b;border-bottom:1px solid #292b2b}.stats{display:grid;grid-template-columns:repeat(4,1fr);text-align:center}.stat{padding:42px 12px;border-right:1px solid #333}.stat:last-child{border:0}.stat b{display:block;font-size:40px}.stat span{color:var(--gold2);font-size:11px;letter-spacing:1.5px}
+.about{display:grid;grid-template-columns:1.05fr .95fr;gap:65px;align-items:center}.aboutimg{height:440px;border-radius:14px;background:linear-gradient(135deg,#33281688,#090909aa),url('https://images.unsplash.com/photo-1578683010236-d716f9a3f461?auto=format&fit=crop&w=1200&q=85') center/cover;border:1px solid #363636;position:relative}.aboutbadge{position:absolute;right:20px;bottom:20px;background:#0b0c0ce8;border:1px solid #6a5124;padding:18px 20px;border-radius:8px}.about h2{font:700 44px/1.05 Georgia,serif;margin:10px 0 20px}.about p{color:#aaa;line-height:1.85}.checks{list-style:none;padding:0;margin:25px 0}.checks li{margin:12px 0;color:#d3d3ce}.checks li:before{content:"✓";color:var(--gold2);font-weight:bold;margin-right:10px}
+.projects{display:grid;grid-template-columns:1.4fr .8fr .8fr;gap:15px}.project{min-height:230px;border-radius:12px;overflow:hidden;border:1px solid #303232;background-size:cover;background-position:center;position:relative}.project:after{content:"";position:absolute;inset:45% 0 0;background:linear-gradient(transparent,#000d)}.project b{position:absolute;z-index:2;left:18px;bottom:17px;font:700 20px Georgia,serif}
+.cta{background:linear-gradient(110deg,#1b160d,#0e0f0f);border:1px solid #604b25;border-radius:15px;padding:52px;text-align:center}.cta h2{font:700 42px Georgia,serif;margin:10px 0}.cta p{color:#aaa;margin:0 auto 25px;max-width:650px;line-height:1.7}
+footer{border-top:1px solid #272929;padding:42px 0 100px;color:#888}.foot{display:flex;justify-content:space-between}.gold{color:var(--gold2)}
+.mobilebar{display:none}
+@media(max-width:850px){.top{display:none}.links,.navcta .ghost{display:none}.hamb{display:block}.navcta .goldbtn{display:inline-flex;padding:10px 13px}.hero{min-height:610px;background-position:60% center}.trustbox{grid-template-columns:repeat(2,1fr)}.trustitem:nth-child(2){border-right:0}.trustitem:nth-child(-n+2){border-bottom:1px solid #333}.units{grid-template-columns:repeat(2,1fr)}.about{grid-template-columns:1fr;gap:30px}.aboutimg{height:330px}.projects{grid-template-columns:1fr 1fr}.project:first-child{grid-column:1/-1}.stats{grid-template-columns:repeat(2,1fr)}.stat:nth-child(2){border:0}.stat:nth-child(-n+2){border-bottom:1px solid #333}.mobilebar{position:fixed;bottom:0;left:0;right:0;z-index:60;display:grid;grid-template-columns:repeat(3,1fr);background:#0d0e0e;border-top:1px solid #444}.mobilebar a{text-align:center;padding:13px 4px;font-size:11px;border-right:1px solid #333}.mobilebar b{display:block;color:var(--gold2);font-size:16px;margin-bottom:3px}}
+@media(max-width:520px){.wrap{width:min(100% - 28px,1180px)}.hero h1{font-size:43px}.hero p{font-size:14px}.head{display:block}.head .btn{margin-top:12px}.units{grid-template-columns:1fr}.unitimg{height:200px}.about h2,.cta h2{font-size:34px}.projects{grid-template-columns:1fr}.project:first-child{grid-column:auto}.cta{padding:34px 20px}.foot{display:block}.foot div+div{margin-top:12px}}
+</style>
+</head>
+<body>
+<div class="top"><div class="wrap"><span>HEAVY EQUIPMENT RENTAL & SERVICES</span><span>Indonesia · Professional · Reliable</span></div></div>
+<header><div class="wrap nav">
+<a class="logo" href="#"><span class="monogram">TN</span><span class="logotxt"><b>TERRA NUSANTARA</b><br><small>GROUP</small></span></a>
+<nav class="links"><a href="#armada">Armada</a><a href="#layanan">Layanan</a><a href="#proyek">Proyek</a><a href="#tentang">Tentang Kami</a><a href="#kontak">Kontak</a></nav>
+<div class="navcta"><a class="btn goldbtn" href="https://wa.me/6281234567890?text=Halo%20Terra%20Nusantara,%20saya%20ingin%20request%20quotation.">REQUEST QUOTATION</a><span class="hamb">☰</span></div>
+</div></header>
+
+<section class="hero"><div class="wrap"><div class="eyebrow">— RENTAL ALAT BERAT TERPERCAYA</div>
+<h1>SOLUSI <span>ALAT BERAT</span><br>UNTUK PROYEK<br>BESAR ANDA.</h1>
+<p>Armada berkualitas, operator profesional, dan layanan yang siap mendukung pekerjaan konstruksi, pertambangan, infrastruktur, hingga industri.</p>
+<div class="actions"><a class="btn goldbtn" href="https://wa.me/6281234567890?text=Halo%20Terra%20Nusantara,%20saya%20ingin%20request%20quotation%20alat%20berat.">▣ REQUEST PENAWARAN</a><a class="btn ghost" href="#armada">LIHAT ARMADA ↓</a></div></div></section>
+
+<div class="trust"><div class="wrap"><div class="trustbox">
+<div class="trustitem"><div class="ico">◇</div><strong>UNIT TERAWAT</strong><small>Maintenance berkala & siap operasi</small></div>
+<div class="trustitem"><div class="ico">✦</div><strong>OPERATOR PROFESIONAL</strong><small>Berpengalaman & berkompeten</small></div>
+<div class="trustitem"><div class="ico">◷</div><strong>SUPPORT 24/7</strong><small>Respons cepat untuk kebutuhan proyek</small></div>
+<div class="trustitem"><div class="ico">♢</div><strong>FLEKSIBEL</strong><small>Durasi sewa menyesuaikan proyek</small></div>
+</div></div></div>
+
+<section id="armada"><div class="wrap"><div class="head"><div><div class="eyebrow">OUR FLEET</div><h2>Armada Unggulan</h2><p>Pilihan unit untuk berbagai medan dan kebutuhan pekerjaan.</p></div><a class="btn ghost" href="#kontak">MINTA DAFTAR UNIT →</a></div>
+<div class="units">
+<article class="unit"><div class="unitimg" style="background-image:url('https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=900&q=85')"><span class="tag">READY UNIT</span></div><div class="unitbody"><h3>Excavator</h3><div class="spec">PC 200 · PC 300 · PC 400<br>Untuk earthwork, tambang & konstruksi.</div><div class="unitfoot"><div class="price"><small>Mulai dari</small>Rp 3,5 Jt/hari</div><a class="gold" href="https://wa.me/6281234567890?text=Saya%20tertarik%20Excavator.">Detail →</a></div></div></article>
+<article class="unit"><div class="unitimg" style="background-image:url('https://images.unsplash.com/photo-1605733160314-4fc7dac4bb16?auto=format&fit=crop&w=900&q=85')"><span class="tag">READY UNIT</span></div><div class="unitbody"><h3>Dump Truck</h3><div class="spec">10 Wheel · 20 Wheel<br>Hauling material & operasional proyek.</div><div class="unitfoot"><div class="price"><small>Mulai dari</small>Rp 2,8 Jt/hari</div><a class="gold" href="https://wa.me/6281234567890?text=Saya%20tertarik%20Dump%20Truck.">Detail →</a></div></div></article>
+<article class="unit"><div class="unitimg" style="background-image:url('https://images.unsplash.com/photo-1592982537447-7440770cbfc9?auto=format&fit=crop&w=900&q=85')"><span class="tag">READY UNIT</span></div><div class="unitbody"><h3>Wheel Loader</h3><div class="spec">WA 200 · WA 300 · WA 500<br>Loading, stockpile & material handling.</div><div class="unitfoot"><div class="price"><small>Mulai dari</small>Rp 2,8 Jt/hari</div><a class="gold" href="https://wa.me/6281234567890?text=Saya%20tertarik%20Wheel%20Loader.">Detail →</a></div></div></article>
+<article class="unit"><div class="unitimg" style="background-image:url('https://images.unsplash.com/photo-1586864387967-d02ef85d93e8?auto=format&fit=crop&w=900&q=85')"><span class="tag">BY REQUEST</span></div><div class="unitbody"><h3>Mobile Crane</h3><div class="spec">25 Ton · 50 Ton · 100 Ton<br>Lifting & heavy construction support.</div><div class="unitfoot"><div class="price"><small>Mulai dari</small>Rp 3,0 Jt/hari</div><a class="gold" href="https://wa.me/6281234567890?text=Saya%20tertarik%20Mobile%20Crane.">Detail →</a></div></div></article>
+</div></div></section>
+
+<div class="band"><div class="wrap stats"><div class="stat"><b>15+</b><span>TAHUN PENGALAMAN</span></div><div class="stat"><b>500+</b><span>UNIT ARMADA</span></div><div class="stat"><b>100+</b><span>OPERATOR</span></div><div class="stat"><b>50+</b><span>PROYEK</span></div></div></div>
+
+<section id="layanan"><div class="wrap"><div class="head"><div><div class="eyebrow">OUR SERVICES</div><h2>Layanan Untuk Proyek</h2></div></div><div class="units">
+<div class="unit"><div class="unitbody"><div class="ico">▰</div><h3>Rental Harian</h3><div class="spec">Sewa unit untuk pekerjaan jangka pendek dengan fleksibilitas tinggi.</div></div></div>
+<div class="unit"><div class="unitbody"><div class="ico">◷</div><h3>Rental Bulanan</h3><div class="spec">Paket jangka panjang untuk pekerjaan proyek yang berkelanjutan.</div></div></div>
+<div class="unit"><div class="unitbody"><div class="ico">⚙</div><h3>Dengan Operator</h3><div class="spec">Operator berpengalaman untuk membantu produktivitas dan keselamatan kerja.</div></div></div>
+<div class="unit"><div class="unitbody"><div class="ico">⌖</div><h3>Mobilisasi</h3><div class="spec">Dukungan pengiriman dan mobilisasi unit menuju lokasi proyek.</div></div></div>
+</div></div></section>
+
+<section id="tentang"><div class="wrap about"><div class="aboutimg"><div class="aboutbadge"><b class="gold">TERRA NUSANTARA</b><br><small>Heavy Equipment Partner</small></div></div><div><div class="eyebrow">ABOUT US</div><h2>Partner Alat Berat Untuk Pekerjaan Besar.</h2><p>Terra Nusantara Group hadir untuk memberikan solusi rental alat berat yang mengutamakan kesiapan unit, pelayanan profesional, dan ketepatan kebutuhan proyek.</p><ul class="checks"><li>Armada dirawat dan diperiksa secara berkala</li><li>Tim/operator berpengalaman</li><li>Respons cepat untuk kebutuhan proyek</li><li>Paket rental dapat disesuaikan</li></ul><a class="btn goldbtn" href="https://wa.me/6281234567890">KONSULTASI PROYEK →</a></div></div></section>
+
+<section id="proyek"><div class="wrap"><div class="head"><div><div class="eyebrow">PROJECT EXPERIENCE</div><h2>Proyek & Industri</h2></div></div><div class="projects">
+<div class="project" style="background-image:url('https://images.unsplash.com/photo-1541971875076-8f970d573be6?auto=format&fit=crop&w=1200&q=85')"><b>Construction & Infrastructure</b></div>
+<div class="project" style="background-image:url('https://images.unsplash.com/photo-1513828583688-c52646db42da?auto=format&fit=crop&w=900&q=85')"><b>Mining</b></div>
+<div class="project" style="background-image:url('https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=900&q=85')"><b>Industrial</b></div>
+</div></div></section>
+
+<section id="kontak"><div class="wrap"><div class="cta"><div class="eyebrow">READY TO WORK?</div><h2>Bangun Proyek Anda Bersama Kami.</h2><p>Beritahu jenis pekerjaan, lokasi, durasi, dan unit yang dibutuhkan. Tim Terra Nusantara akan membantu menyiapkan penawaran.</p><a class="btn goldbtn" href="https://wa.me/6281234567890?text=Halo%20Terra%20Nusantara,%20saya%20ingin%20meminta%20quotation.%0AProyek:%20%0ALokasi:%20%0ADurasi:%20%0AUnit:%20">WHATSAPP QUOTATION ↗</a></div></div></section>
+</main>
+
+<footer><div class="wrap foot"><div><b class="gold">TERRA NUSANTARA GROUP</b><br><small>Heavy Equipment Rental & Services</small></div><div>© 2026 Terra Nusantara Group · Indonesia</div></div></footer>
+<div class="mobilebar"><a href="#armada"><b>▣</b>Armada</a><a href="https://wa.me/6281234567890"><b>◉</b>WhatsApp</a><a href="#kontak"><b>▤</b>Quotation</a></div>
+</body></html>

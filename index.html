@@ -1,172 +1,404 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="id">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="Terra Nusantara Group - Rental alat berat untuk kebutuhan proyek.">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Terra Nusantara Group | Heavy Equipment Rental</title>
+
 <style>
-:root{
-  --bg:#080909;--panel:#121415;--gold:#d9a63b;--white:#f5f1e8;
-  --muted:#aaa;--line:#2a2c2d;--green:#16a765;
-}
-*{box-sizing:border-box}
+*{box-sizing:border-box;margin:0;padding:0}
+
 html{scroll-behavior:smooth}
-body{margin:0;background:var(--bg);color:var(--white);font-family:Arial,sans-serif;line-height:1.55}
-a{color:inherit;text-decoration:none}
-.container{width:min(1120px,92%);margin:auto}
-header{position:sticky;top:0;z-index:20;background:rgba(8,9,9,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
-.nav{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}
-.brand{display:flex;align-items:center;gap:14px}
-.logo{width:64px;height:64px;border:2px solid var(--gold);display:grid;place-items:center;font-family:Georgia,serif;font-size:30px;font-weight:bold;color:var(--gold)}
-.brand strong{display:block;font: bold 25px Georgia,serif;letter-spacing:2px}
-.brand small{color:var(--gold);letter-spacing:6px}
-.links{display:flex;gap:22px;color:#ddd}
-.links a:hover{color:var(--gold)}
-.btn{display:inline-block;padding:13px 20px;border-radius:8px;background:var(--green);font-weight:bold}
-.hero{padding:80px 0 55px}
-.eyebrow{color:var(--gold);font-weight:bold;letter-spacing:5px}
-h1{font:normal clamp(48px,8vw,86px)/.98 Georgia,serif;margin:14px 0 22px}
-.lead{max-width:700px;color:#ccc;font-size:18px}
-.stats{display:grid;grid-template-columns:repeat(3,1fr);margin-top:35px;border:1px solid var(--line)}
-.stat{padding:20px;border-right:1px solid var(--line)}
-.stat:last-child{border:0}
-.stat b{display:block;font-size:24px;color:var(--gold)}
-section{padding:75px 0}
-.section-head{margin-bottom:30px}
-.section-head h2{font:normal 44px Georgia,serif;margin:0 0 8px}
-.section-head p{color:var(--muted);margin:0}
-.dark{background:#0d0f10}
-.fleet{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
-.card{background:var(--panel);border:1px solid var(--line);border-radius:14px;overflow:hidden}
-.card img{display:block;width:100%;height:235px;object-fit:cover}
-.card-body{padding:22px}
-.card h3{font:normal 28px Georgia,serif;margin:0 0 8px}
-.card p{color:var(--muted);margin:0 0 18px}
-.tag{display:inline-block;border:1px solid #5a4724;color:var(--gold);padding:6px 10px;border-radius:999px;font-size:13px}
-.grid2{display:grid;grid-template-columns:1fr 1fr;gap:30px}
-.box{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:30px}
-.box h3{font:normal 28px Georgia,serif;margin-top:0}
-.box p{color:#bbb}
-.quote{background:linear-gradient(135deg,#191309,#101213);border:1px solid #4a391d;border-radius:14px;padding:40px}
-.quote h2{font:normal 40px Georgia,serif;margin-top:0}
-footer{border-top:1px solid var(--line);padding:30px 0;color:#999}
-.wa{position:fixed;right:20px;bottom:20px;z-index:30;background:var(--green);padding:16px 24px;border-radius:999px;font-weight:bold;box-shadow:0 8px 30px #0008}
+
+body{
+font-family:Arial,sans-serif;
+background:#080909;
+color:#f5f1e8;
+line-height:1.6
+}
+
+a{text-decoration:none;color:inherit}
+
+.container{
+width:min(1120px,92%);
+margin:auto
+}
+
+header{
+position:sticky;
+top:0;
+z-index:10;
+background:rgba(8,9,9,.94);
+border-bottom:1px solid #292929;
+backdrop-filter:blur(10px)
+}
+
+.nav{
+min-height:76px;
+display:flex;
+align-items:center;
+justify-content:space-between
+}
+
+.brand{
+display:flex;
+align-items:center;
+gap:14px
+}
+
+.logo{
+width:58px;
+height:58px;
+border:2px solid #d9a63b;
+display:grid;
+place-items:center;
+color:#d9a63b;
+font:bold 30px Georgia
+}
+
+.brand strong{
+display:block;
+font:26px Georgia
+}
+
+.brand small{
+color:#d9a63b;
+letter-spacing:6px
+}
+
+nav{
+display:flex;
+gap:22px
+}
+
+nav a{
+color:#ddd;
+font-weight:bold
+}
+
+nav a:hover{color:#d9a63b}
+
+.hero{
+min-height:78vh;
+display:flex;
+align-items:center;
+padding:80px 0
+}
+
+.badge{
+color:#d9a63b;
+font-weight:bold;
+letter-spacing:5px;
+margin-bottom:18px
+}
+
+h1{
+font:clamp(50px,8vw,92px) Georgia;
+line-height:1
+}
+
+.hero p{
+max-width:650px;
+margin:25px 0;
+font-size:19px;
+color:#bbb
+}
+
+.btn{
+display:inline-block;
+background:#d9a63b;
+color:#080909;
+padding:14px 24px;
+border-radius:8px;
+font-weight:bold
+}
+
+.btn:hover{
+background:#f0c35d
+}
+
+section{
+padding:85px 0
+}
+
+.section-title{
+font:42px Georgia;
+margin-bottom:12px
+}
+
+.section-desc{
+color:#aaa;
+margin-bottom:35px
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:22px
+}
+
+.card{
+background:#121415;
+border:1px solid #292929;
+border-radius:16px;
+overflow:hidden;
+transition:.25s
+}
+
+.card:hover{
+transform:translateY(-6px);
+border-color:#d9a63b
+}
+
+.card img{
+width:100%;
+height:220px;
+object-fit:cover;
+display:block
+}
+
+.card-body{
+padding:24px
+}
+
+.card h3{
+font:28px Georgia;
+margin-bottom:10px
+}
+
+.card p{
+color:#aaa;
+margin-bottom:20px
+}
+
+.dark{
+background:#0d0f10
+}
+
+.about{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:45px;
+align-items:center
+}
+
+.about-box{
+border:1px solid #292929;
+padding:30px;
+border-radius:16px;
+background:#121415
+}
+
+.quote{
+text-align:center;
+border:1px solid #292929;
+border-radius:18px;
+padding:55px 25px;
+background:linear-gradient(135deg,#191309,#101213)
+}
+
+.quote h2{
+font:42px Georgia;
+margin-bottom:15px
+}
+
+.quote p{
+color:#aaa;
+margin-bottom:25px
+}
+
+footer{
+padding:35px 0;
+border-top:1px solid #292929;
+color:#888;
+text-align:center
+}
+
 @media(max-width:800px){
- .links{display:none}.fleet,.grid2{grid-template-columns:1fr}.stats{grid-template-columns:1fr}
- .stat{border-right:0;border-bottom:1px solid var(--line)}.stat:last-child{border-bottom:0}
- .hero{padding-top:55px}.card img{height:220px}
+nav{display:none}
+
+.grid{
+grid-template-columns:1fr
+}
+
+.about{
+grid-template-columns:1fr
+}
+
+.hero{
+min-height:70vh;
+padding:60px 0
+}
+
+.card img{
+height:230px
+}
 }
 </style>
 </head>
+
 <body>
 
 <header>
-  <div class="container nav">
-    <a class="brand" href="#home">
-      <span class="logo">TN</span>
-      <span><strong>TERRA NUSANTARA</strong><small>GROUP</small></span>
-    </a>
-    <nav class="links">
-      <a href="#home">Home</a>
-      <a href="#armada">Armada</a>
-      <a href="#layanan">Layanan</a>
-      <a href="#tentang">Tentang</a>
-      <a href="#quote">Quotation</a>
-    </nav>
-  </div>
+<div class="container nav">
+
+<a class="brand" href="#home">
+<div class="logo">TN</div>
+<div>
+<strong>TERRA<br>NUSANTARA</strong>
+<small>GROUP</small>
+</div>
+</a>
+
+<nav>
+<a href="#home">Home</a>
+<a href="#armada">Armada</a>
+<a href="#tentang">Tentang</a>
+<a href="#quote">Quotation</a>
+</nav>
+
+</div>
 </header>
 
 <main id="home">
+
 <section class="hero">
-  <div class="container">
-    <div class="eyebrow">RENTAL ALAT BERAT</div>
-    <h1>Armada<br>Unggulan</h1>
-    <p class="lead">Pilih unit sesuai kebutuhan proyek. Harga dan ketersediaan dapat dikonfirmasi melalui quotation.</p>
-    <div class="stats">
-      <div class="stat"><b>24/7</b><span>Dukungan Operasional</span></div>
-      <div class="stat"><b>READY</b><span>Armada Siap Kerja</span></div>
-      <div class="stat"><b>PROJECT</b><span>Siap Mendukung Proyek</span></div>
-    </div>
-  </div>
+<div class="container">
+
+<div class="badge">HEAVY EQUIPMENT RENTAL</div>
+
+<h1>Armada<br>Unggulan</h1>
+
+<p>
+Partner alat berat untuk kebutuhan konstruksi,
+pertambangan, pembangunan infrastruktur dan berbagai
+proyek profesional.
+</p>
+
+<a class="btn" href="#armada">Lihat Armada</a>
+
+</div>
 </section>
+
 
 <section id="armada" class="dark">
-  <div class="container">
-    <div class="section-head">
-      <h2>Fleet Catalog</h2>
-      <p>Alat berat untuk pekerjaan konstruksi, pemindahan material, dan pekerjaan proyek.</p>
-    </div>
-    <div class="fleet">
-      <article class="card">
-        <img src="excavator.png" alt="Excavator">
-        <div class="card-body">
-          <span class="tag">EXCAVATOR</span>
-          <h3>Excavator</h3>
-          <p>Untuk penggalian, pengerukan, pemindahan tanah, dan pekerjaan konstruksi.</p>
-          <a class="btn" href="#quote">Minta Quotation</a>
-        </div>
-      </article>
-      <article class="card">
-        <img src="dump-truck.png" alt="Dump Truck">
-        <div class="card-body">
-          <span class="tag">DUMP TRUCK</span>
-          <h3>Dump Truck</h3>
-          <p>Untuk pengangkutan material dan kebutuhan mobilisasi material proyek.</p>
-          <a class="btn" href="#quote">Minta Quotation</a>
-        </div>
-      </article>
-      <article class="card">
-        <img src="wheel-loader.png" alt="Wheel Loader">
-        <div class="card-body">
-          <span class="tag">WHEEL LOADER</span>
-          <h3>Wheel Loader</h3>
-          <p>Untuk loading, handling, dan pemindahan material di area proyek.</p>
-          <a class="btn" href="#quote">Minta Quotation</a>
-        </div>
-      </article>
-    </div>
-  </div>
+<div class="container">
+
+<h2 class="section-title">Armada Kami</h2>
+
+<p class="section-desc">
+Pilih unit sesuai kebutuhan proyek Anda.
+</p>
+
+<div class="grid">
+
+<article class="card">
+<img src="excavator.png" alt="Excavator">
+<div class="card-body">
+<h3>Excavator</h3>
+<p>
+Cocok untuk pekerjaan penggalian,
+pengerukan, pemindahan material dan
+pekerjaan konstruksi berat.
+</p>
+<a class="btn" href="#quote">Tanya Unit</a>
+</div>
+</article>
+
+
+<article class="card">
+<img src="dump-truck.png" alt="Dump Truck">
+<div class="card-body">
+<h3>Dump Truck</h3>
+<p>
+Solusi pengangkutan material seperti
+tanah, pasir, batu dan material proyek
+dalam jumlah besar.
+</p>
+<a class="btn" href="#quote">Tanya Unit</a>
+</div>
+</article>
+
+
+<article class="card">
+<img src="wheel-loader.png" alt="Wheel Loader">
+<div class="card-body">
+<h3>Wheel Loader</h3>
+<p>
+Mendukung proses loading, pemindahan
+material dan pekerjaan penataan area
+proyek.
+</p>
+<a class="btn" href="#quote">Tanya Unit</a>
+</div>
+</article>
+
+</div>
+</div>
 </section>
 
-<section id="layanan">
-  <div class="container">
-    <div class="section-head">
-      <h2>Layanan Proyek</h2>
-      <p>Siap mendukung kebutuhan alat berat untuk pekerjaan Anda.</p>
-    </div>
-    <div class="grid2">
-      <div class="box"><h3>Rental Alat Berat</h3><p>Penyediaan unit sesuai kebutuhan dan jadwal proyek.</p></div>
-      <div class="box"><h3>Dukungan Proyek</h3><p>Konsultasikan kebutuhan armada, lokasi kerja, dan durasi penggunaan.</p></div>
-    </div>
-  </div>
+
+<section id="tentang">
+<div class="container about">
+
+<div>
+<div class="badge">TERRA NUSANTARA GROUP</div>
+<h2 class="section-title">
+Siap Mendukung Proyek Anda
+</h2>
+
+<p class="section-desc">
+Kami menyediakan solusi alat berat untuk membantu
+pekerjaan proyek berjalan lebih efektif dan efisien.
+</p>
+
+<a class="btn" href="#quote">Hubungi Kami</a>
+</div>
+
+<div class="about-box">
+<h3>Kenapa memilih kami?</h3>
+<br>
+<p>✓ Armada alat berat siap digunakan</p>
+<p>✓ Mendukung berbagai kebutuhan proyek</p>
+<p>✓ Pilihan unit sesuai pekerjaan</p>
+<p>✓ Konsultasi kebutuhan alat berat</p>
+<p>✓ Harga dan ketersediaan melalui quotation</p>
+</div>
+
+</div>
 </section>
 
-<section id="tentang" class="dark">
-  <div class="container">
-    <div class="grid2">
-      <div class="box"><h3>Tentang Terra Nusantara</h3><p>Terra Nusantara Group hadir sebagai partner penyedia alat berat untuk membantu pekerjaan proyek berjalan lebih efektif.</p></div>
-      <div class="box"><h3>Siap Mendukung Proyek</h3><p>Hubungi kami untuk mengecek unit, harga, ketersediaan, dan kebutuhan operasional proyek.</p></div>
-    </div>
-  </div>
+
+<section id="quote" class="dark">
+<div class="container">
+
+<div class="quote">
+
+<h2>Butuh Armada?</h2>
+
+<p>
+Sampaikan kebutuhan proyek Anda.
+Harga dan ketersediaan unit dapat dikonfirmasi
+melalui quotation.
+</p>
+
+<a class="btn" href="mailto:info@terranusantara.example">
+Minta Quotation
+</a>
+
+</div>
+
+</div>
 </section>
 
-<section id="quote">
-  <div class="container">
-    <div class="quote">
-      <h2>Butuh Armada?</h2>
-      <p>Jelaskan kebutuhan alat, lokasi proyek, dan perkiraan durasi. Tim kami dapat membantu menyiapkan quotation.</p>
-      <a class="btn" href="#home">Kembali ke atas</a>
-    </div>
-  </div>
-</section>
 </main>
 
+
 <footer>
-  <div class="container">© Terra Nusantara Group — Heavy Equipment Rental</div>
+<div class="container">
+© 2026 Terra Nusantara Group — Heavy Equipment Rental
+</div>
 </footer>
 
-<!-- Ganti nomor pada link WhatsApp di bawah jika ingin mengaktifkan tombol chat. -->
-<a class="wa" href="https://wa.me/" aria-label="WhatsApp">WhatsApp</a>
 </body>
 </html>
